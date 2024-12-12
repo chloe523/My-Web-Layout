@@ -30,10 +30,13 @@ body {
     background-color: aquamarine;
     color: cadetblue;
 }
-.column .side {
+.column {
+    float: left;
+}
+.column.side {
     width: 25%;
 }
-.column .middle {
+.column.middle {
     width: 50%;
 }
 .row:after{
@@ -44,5 +47,14 @@ body {
 footer {
     padding-right: 20px;
     overflow: hidden;
-    
+    background-color: green;
+    color: white;
 }
+footer p {
+padding: 10px;
+}
+@media screen and (max-width: 600px) {
+    .column .side, .column .middle {
+        width: 100%;
+    }
+    

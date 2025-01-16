@@ -9,35 +9,41 @@ body {
 }
 
 .header {
-    background-color: mediumaquamarine;
+    background-color: white;
     padding: 20px;
     text-align: center;
 }
 
 .topnav {
     overflow: hidden;
-    background-color: aquamarine;
+    background-color: black;
 }
 .topnav a{
     float: left;
     display: block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14 16;
     text-decoration: none;
 }
 .topnav a:hover{
-    background-color: aquamarine;
-    color: cadetblue;
+    background-color: white;
+    color: black;
 }
 .column {
     float: left;
+    width: 25%;
+    padding-right: 25px;
+    padding-left: 10px;
+}
+.column {
+    float: lef;
 }
 .column.side {
-    width: 25%;
+    width: 25;
 }
 .column.middle {
-    width: 50%;
+    width: 50;
 }
 .row:after{
     content: "";
@@ -45,16 +51,23 @@ body {
     clear: both;    
 }
 footer {
-    padding-right: 20px;
+    padding-right: 20;
     overflow: hidden;
-    background-color: green;
+    background-color: gray;
     color: white;
 }
 footer p {
-padding: 10px;
+padding: 10;
 }
-@media screen and (max-width: 600px) {
-    .column .side, .column .middle {
-        width: 100%;
+@@media screen and (max-width: 600px;) {
+  .column.side, .column.middle
+    width: 100%;
+}
+    .column .side, {
+        width: 25;
+    }
+    
+    .column .middle {
+        width: 50;
     }
     
